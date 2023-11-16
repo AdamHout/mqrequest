@@ -2,7 +2,7 @@
  * mqrequest - Demo program to send requests to a remote queue and pull the replies
  * 
  * Summary:
- * mqrequest generates requests to machine E6410 consiting of a 64kb payload of MQUINT32 values. The requests are sent
+ * mqrequest generates requests to machine E6410 consisting of a 64KB payload of MQUINT32 values. The requests are sent
  * to remote queue definition DEV.Q1 via transmission queue E6410.TRANS.QUE over channel S1558.E6410. 
  * 
  * MQ Configuration:
@@ -193,7 +193,7 @@ int main(int argc, char **argv)
       }
          
       if ((ctr+1) % 25 == 0){
-         printf("\r%d transactions completed",ctr+1);
+         printf("\r%d Replies recieved",ctr+1);
          fflush(stdout);
       }
    }
